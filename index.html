@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JD's Kitchen — Malabar Biryani &amp; Mandi, Kozhikode</title>
+<!-- Open Graph / WhatsApp Preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JD's Kitchen Kozhikode">
+<meta property="og:url" content="https://jdskitchen.vercel.app/">
+<meta property="og:title" content="JD's Kitchen — Authentic Malabar Dum Biryani & Mandi, Kozhikode">
+<meta property="og:description" content="Dum-cooked Malabar Biryani & Mandi under an open-air timber courtyard in Parambath, Paloramala, Kozhikode. Ample parking & daily dum counter from 11:30 AM.">
+<meta property="og:image" content="https://jdskitchen.vercel.app/images/jds_beef_biryani_review.jpg">
+<meta property="og:image:secure_url" content="https://jdskitchen.vercel.app/images/jds_beef_biryani_review.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JD's Kitchen Kozhikode Beef Dum Biryani">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jdskitchen_off">
+<meta name="twitter:title" content="JD's Kitchen — Kozhikode Malabar Biryani">
+<meta name="twitter:description" content="Authentic Kozhikode Dum Biryani, Arabian Mandi & Charcoal Alfaham. Order directly via WhatsApp.">
+<meta name="twitter:image" content="https://jdskitchen.vercel.app/images/jds_beef_biryani_review.jpg">
+
+<!-- Structured JSON-LD Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "JD's Kitchen",
+  "image": "https://jdskitchen.vercel.app/images/jds_beef_biryani_review.jpg",
+  "url": "https://jdskitchen.vercel.app",
+  "telephone": "+919000000000",
+  "priceRange": "₹180 - ₹300",
+  "hasMenu": "https://jdskitchen.vercel.app/#menu",
+  "servesCuisine": ["Malabar", "Kerala", "Biryani", "Mandi", "Arabian"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Parambath Road, Paloramala",
+    "addressLocality": "Kozhikode",
+    "addressRegion": "Kerala",
+    "postalCode": "673307",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 11.3539638,
+    "longitude": 75.7591583
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "11:30",
+      "closes": "23:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.8",
+    "reviewCount": "137"
+  },
+  "sameAs": [
+    "https://www.instagram.com/jdskitchen.official/",
+    "https://maps.app.goo.gl/TTVe3f8395hx39yf9"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600&family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          saffron: { DEFAULT: '#e3a23c', deep: '#c4832a', light: '#f2c879' },
+          chili: '#c1503c',
+          panel: { DEFAULT: '#120a06', dark: '#0d0805', card: '#1a110a' },
+          ivory: '#f5ecdc',
+          muted: '#c9b59c'
+        },
+        fontFamily: {
+          serif: ['Fraunces', 'serif'],
+          sans: ['Work Sans', 'sans-serif'],
+          mono: ['Space Mono', 'monospace']
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  body {
+    background-color: #0d0805;
+    color: #f5ecdc;
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0; z-index: 1; pointer-events: none;
+    opacity: 0.04; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  .preserve-3d { transform-style: preserve-3d; }
+  .tilt-card {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .tilt-card:hover {
+    transform: perspective(1000px) rotateX(6deg) rotateY(-6deg) translateZ(15px);
+    box-shadow: 0 30px 60px -15px rgba(227, 162, 60, 0.25);
+  }
+  @keyframes floatSteam {
+    0% { opacity: 0; transform: translateY(0) scaleX(0.8); }
+    50% { opacity: 0.8; transform: translateY(-15px) scaleX(1.1); }
+    100% { opacity: 0; transform: translateY(-30px) scaleX(1.3); }
+  }
+  .steam-line-1 { animation: floatSteam 2.2s infinite ease-in-out; }
+  .steam-line-2 { animation: floatSteam 1.8s infinite ease-in-out 0.4s; }
+  .steam-line-3 { animation: floatSteam 2.5s infinite ease-in-out 0.2s; }
+</style>
+</head>
+<body class="bg-[#0d0805] text-[#f5ecdc] antialiased">
+
+<!-- 3D Ember Particle Canvas -->
+<canvas id="emberCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+<div id="root"></div>
+
+<!-- React & Babel CDN -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- 3D Canvas Engine -->
+<script>
+  (function init3DEmbers() {
+    const canvas = document.getElementById('emberCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    resize();
+    window.addEventListener('resize', resize);
+
+    const particles = Array.from({ length: 60 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      z: Math.random() * 1000,
+      size: Math.random() * 2.5 + 1,
+      speedY: Math.random() * 0.8 + 0.3,
+      opacity: Math.random() * 0.7 + 0.3,
+      color: Math.random() > 0.4 ? '#e3a23c' : Math.random() > 0.5 ? '#f2c879' : '#c1503c'
+    }));
+
+    function loop() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p) => {
+        p.y -= p.speedY;
+        if (p.y < -20) {
+          p.y = canvas.height + 20;
+          p.x = Math.random() * canvas.width;
+        }
+        const scale = 800 / (800 + p.z);
+        const x = (p.x - canvas.width / 2) * scale + canvas.width / 2;
+        const y = (p.y - canvas.height / 2) * scale + canvas.height / 2;
+        ctx.beginPath();
+        ctx.arc(x, y, p.size * scale * 1.5, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = p.opacity * (1 - p.z / 1000);
+        ctx.shadowBlur = 10 * scale;
+        ctx.shadowColor = p.color;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      });
+      requestAnimationFrame(loop);
+    }
+    loop();
+  })();
+</script>
+
+<!-- Embedded React Engine -->
+<script type="text/babel">
+  const { useState, useEffect } = React;
+
+  const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/TTVe3f8395hx39yf9";
+  const INSTAGRAM_URL = "https://www.instagram.com/jdskitchen.official/?hl=en";
+  const INSTAGRAM_HANDLE = "@jdskitchen.official";
+  const REAL_JDS_COURTYARD_PHOTO = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnomhgJF0O2WtYRUTDCw99JJHSv2tqu0tY1Xtn2k2z5mjVXNr0tlEJIwkiQBT5DhCYVD_2o4Gr3YpYOnwP9vj82-DSv3ew6RW3NePGeskuk3-lhTsO1OlpSMqeTpzgeHUWVikroOZaPilhR=s1360-w1360-h1020-rw";
+
+  function InstagramSvgIcon({ className = "w-4 h-4" }) {
+    return (
+      <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    );
+  }
+
+  const INSTAGRAM_POSTS = [
+    { id: 1, caption: "The moment the dum is unsealed at 11:30 AM! Fragrant Wayanad cardamom & aged Kaima rice aroma fills our courtyard. 🪵🔥 #JDsKitchen #KozhikodeBiryani", likes: "1.4k", comments: "84", image: "./images/jds_beef_biryani_review.jpg", tag: "LIVE DUM UNSEALING" },
+    { id: 2, caption: "Spacious timber roof courtyard dining — crafted for long family lunches with stress-free parking. 🌿🚗 #MalabarDining #Paloramala", likes: "980", comments: "52", image: REAL_JDS_COURTYARD_PHOTO, tag: "COURTYARD VIBES" },
+    { id: 3, caption: "Arabian Chicken Mandi smoked to perfection over coconut charcoal pits! Served with house garlic toum & salsa. 🍗🔥 #ChickenMandi", likes: "2.1k", comments: "116", image: "./images/jds_mandi_review.jpg", tag: "SMOKED MANDI" },
+    { id: 4, caption: "Dark roasted Kozhikode Beef Varattu with toasted coconut slivers & aromatic Malabar Ghee Rice! 🍛✨ #BeefRoast #NaadanFood", likes: "1.8k", comments: "94", image: "./images/jds_beef_varattu.jpg", tag: "SIGNATURE COMBO" },
+    { id: 5, caption: "Evening Karak Chai & traditional Unnakaya snacks on Parambath Road! Perfect pitstop on long drives. ☕🫓 #EveningSnacks", likes: "1.2k", comments: "63", image: "./images/jds_malabar_snacks.jpg", tag: "EVENING CHAI" },
+    { id: 6, caption: "Quarter Charcoal Alfaham Chicken hot off the red-hot embers! Served with fresh Kubboos flatbread. 🌶️🔥 #AlfahamGrill", likes: "1.5k", comments: "78", image: "./images/jds_alfaham.jpg", tag: "CHARCOAL GRILL" }
+  ];
+
+  const REAL_GOOGLE_REVIEWS = [
+    { id: 1, name: "Sanoop Balan", reviewerBadge: "Local Guide · 304 reviews", stars: 5, when: "4 months ago", photoTag: "Timber Courtyard & Parking", photo: REAL_JDS_COURTYARD_PHOTO, comment: "Ample parking on-site is a huge relief compared to cramped roadside spots nearby. The timber roof courtyard is very well maintained with clean, spacious restrooms for families." },
+    { id: 2, name: "Nafiz Kenzie", reviewerBadge: "Google Reviewer · 6 reviews", stars: 5, when: "4 weeks ago", photoTag: "Malabar Beef Dum Biryani", photo: "./images/jds_beef_biryani_review.jpg", comment: "Ordered the beef biryani — meat was extremely tender and flavorful, rice was perfectly cooked with rich Malabar dum spices. Easily one of the best beef biryanis around!" },
+    { id: 3, name: "Gineesh Kannan", reviewerBadge: "Local Guide · 129 reviews", stars: 5, when: "8 months ago", photoTag: "Arabian Chicken Mandi", photo: "./images/jds_mandi_review.jpg", comment: "Lagoon chicken biryani and Kozhi Nirachath are awesome! Ample parking space and a great outdoor tea and snack counter if you're on a long drive." },
+    { id: 4, name: "Vishnu Chandra", reviewerBadge: "Local Guide · 630 reviews", stars: 4, when: "7 months ago", photoTag: "Evening Malabar Tea & Snacks", photo: "./images/jds_malabar_snacks.jpg", comment: "Wide variety of evening snacks and naadan food! Biryani is really nice and the porotta with beef roast is great for dinner." },
+    { id: 5, name: "Ridaal", reviewerBadge: "Local Guide · 13 reviews", stars: 5, when: "1 year ago", photoTag: "Ghee Rice & Beef Varattu", photo: "./images/jds_beef_varattu.jpg", comment: "Best biryani spot around. Beef and chicken biryani are generous portions, and the beef varattu stew is just as impressive." },
+    { id: 6, name: "Muhammed Sinan", reviewerBadge: "Google Reviewer · 11 reviews", stars: 5, when: "2 years ago", photoTag: "Charcoal Alfaham Chicken", photo: "./images/jds_alfaham.jpg", comment: "Very nice ambience and friendly staff. The biryani and ghee rice combo is a must-try item, alongside their evening Malabar tea snacks." }
+  ];
+
+  const TOP_MAPS_SUGGESTED_DISHES = [
+    { id: 1, name: "Kozhikode Malabar Beef Dum Biryani", price: 180, rating: "5.0 ★", reviewerName: "Nafiz Kenzie", reviewerBadge: "Verified Diner · 4 weeks ago", quote: "Ordered the beef biryani — meat was tender and flavourful, with perfectly cooked, richly spiced rice. One of the best beef biryanis around!", image: "./images/jds_beef_biryani_review.jpg", fallback: "./images/jds_biryani_hero_1786025415940.jpg", highlight: "REVIEWED AS #1 BIRYANI", profile: { spice: 4, ghee: 5, aroma: 5, smoky: 3, tenderness: 5, dumTime: "4.5 Hours Dum", riceType: "Aged Kaima Rice" } },
+    { id: 2, name: "Lagoon Chicken Biryani & Mandi", price: 220, rating: "5.0 ★", reviewerName: "Gineesh Kannan", reviewerBadge: "Local Guide · 129 reviews", quote: "Lagoon chicken biryani is top-notch and the Kozhi Nirachath is awesome! Great outdoor tea counter for long drives.", image: "./images/jds_mandi_review.jpg", fallback: "./images/jds_mandi_dish_1786025430741.jpg", highlight: "TOP NOTCH SIGNATURE", profile: { spice: 3, ghee: 4, aroma: 5, smoky: 4, tenderness: 5, dumTime: "Smoldering Timber Pit", riceType: "Long-Grain Rice" } },
+    { id: 3, name: "Ghee Rice & Beef Varattu Combo", price: 210, rating: "5.0 ★", reviewerName: "Muhammed Sinan", reviewerBadge: "Verified Diner · 11 reviews", quote: "The ambience is very nice and staff friendly. The ghee rice & beef roast combo is a must-try alongside the evening snacks!", image: "./images/jds_beef_varattu.jpg", fallback: "./images/jds_courtyard_1786025445110.jpg", highlight: "MUST-TRY COMBO", profile: { spice: 5, ghee: 5, aroma: 4, smoky: 4, tenderness: 4, dumTime: "Slow Wok Roasted", riceType: "Malabar Ghee Rice" } }
+  ];
+
+  const MENU_ITEMS = [
+    { id: 1, name: "Malabar Beef Dum Biryani", category: "Biryani & Mandi", price: 180, tag: "TODAY'S SPECIAL", description: "Slow dum-cooked Malabar spices with tender beef chunk, aged short-grain Kaima rice, ghee-roasted cashews & raisins.", image: "./images/jds_beef_biryani_review.jpg", fallback: "./images/jds_biryani_hero_1786025415940.jpg", profile: { spice: 4, ghee: 5, aroma: 5, smoky: 3, tenderness: 5, dumTime: "4.5 Hours Dum", riceType: "Aged Kaima Rice" } },
+    { id: 2, name: "Special Arabian Chicken Mandi", category: "Biryani & Mandi", price: 220, tag: "HOUSE FAVORITE", description: "Fragrant Arabian-style rice cooked over smoldering timber with succulent marinated chicken, garlic toum & spicy tomato salsa.", image: "./images/jds_mandi_review.jpg", fallback: "./images/jds_mandi_dish_1786025430741.jpg", profile: { spice: 2, ghee: 3, aroma: 4, smoky: 5, tenderness: 5, dumTime: "Smoldering Timber Pit", riceType: "Arabian Basmati" } },
+    { id: 3, name: "Charcoal Alfaham Chicken", category: "Grill & Combos", price: 160, tag: "SMOKY DELIGHT", description: "Quarter chicken marinated in Arabian red spices, flame-grilled over coconut charcoal, served with Kubboos & pickled veggies.", image: "./images/jds_alfaham.jpg", fallback: "./images/jds_courtyard_1786025445110.jpg", profile: { spice: 4, ghee: 2, aroma: 4, smoky: 5, tenderness: 4, dumTime: "Flame Charcoal Grilled", riceType: "Kubboos" } },
+    { id: 4, name: "Ghee Rice & Beef Varattu Combo", category: "Grill & Combos", price: 210, tag: "AUTHENTIC CLASSIC", description: "Pure aromatic ghee rice paired with traditional Kozhikode dark roasted spicy beef roast and coconut slivers.", image: "./images/jds_beef_varattu.jpg", fallback: "./images/jds_biryani_hero_1786025415940.jpg", profile: { spice: 5, ghee: 5, aroma: 4, smoky: 4, tenderness: 4, dumTime: "Slow Wok Roasted", riceType: "Malabar Ghee Rice" } }
+  ];
+
+  const ROUTE_PILLS = [
+    { name: "From Kozhikode Railway Station", dist: "18 km", time: "28 mins", url: "https://www.google.com/maps/dir/Kozhikode+Railway+Station/JD's+Kitchen+Parambath+Kozhikode" },
+    { name: "From Calicut Airport (CCJ)", dist: "32 km", time: "45 mins", url: "https://www.google.com/maps/dir/Calicut+International+Airport/JD's+Kitchen+Parambath+Kozhikode" },
+    { name: "From Cyberpark / Hilite City", dist: "14 km", time: "22 mins", url: "https://www.google.com/maps/dir/Cyberpark+Kozhikode/JD's+Kitchen+Parambath+Kozhikode" }
+  ];
+
+  function RealBrandLogo({ className = "" }) {
+    return (
+      <div className={`flex items-center gap-3.5 group cursor-pointer ${className}`}>
+        <div className="relative w-11 h-11 rounded-full bg-gradient-to-tr from-[#c4832a] via-[#f2c879] to-[#c1503c] p-[2px] shadow-lg shadow-[#e3a23c]/25 group-hover:scale-105 transition-transform duration-300">
+          <div className="w-full h-full bg-[#0d0805] rounded-full flex flex-col items-center justify-center relative overflow-hidden">
+            <span className="font-serif font-black text-lg text-[#f5ecdc] tracking-tighter leading-none relative z-10">JD'S</span>
+            <span className="font-mono text-[7px] text-[#e3a23c] font-bold tracking-widest uppercase relative z-10">KITCHEN</span>
+          </div>
+        </div>
+        <div>
+          <div className="flex items-center gap-1.5">
+            <span className="font-serif font-extrabold tracking-tight text-xl text-[#f5ecdc] block leading-none group-hover:text-[#e3a23c] transition-colors">
+              JD'S KITCHEN
+            </span>
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          </div>
+          <span className="font-mono text-[9px] text-[#e3a23c] tracking-[0.2em] uppercase font-bold block mt-0.5">
+            Malabar Biryani &amp; Mandi
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  function ImageWithFallback({ src, fallbackSrc, alt, className }) {
+    const [imgSrc, setImgSrc] = useState(src);
+    const [isLoaded, setIsLoaded] = useState(false);
+    return (
+      <div className={`relative overflow-hidden bg-amber-950/30 ${className}`}>
+        {!isLoaded && <div className="absolute inset-0 bg-amber-900/20 animate-pulse" />}
+        <img
+          src={imgSrc}
+          alt={alt}
+          onError={() => setImgSrc(fallbackSrc || "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%231a110a'/></svg>")}
+          onLoad={() => setIsLoaded(true)}
+          className={`w-full h-full object-cover transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+        />
+      </div>
+    );
+  }
+
+  function App() {
+    const [loading, setLoading] = useState(true);
+    const [progress, setProgress] = useState(0);
+    const [scrollPct, setScrollPct] = useState(0);
+    const [activeCategory, setActiveCategory] = useState("All");
+    const [selectedFlavorDish, setSelectedFlavorDish] = useState(null);
+    const [selectedRoute, setSelectedRoute] = useState(ROUTE_PILLS[0]);
+    const [orderForm, setOrderForm] = useState({ name: "", phone: "", item: "Kozhikode Malabar Beef Dum Biryani" });
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        setScrollPct(total > 0 ? (window.scrollY / total) * 100 : 0);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    useEffect(() => {
+      const timer = setInterval(() => {
+        setProgress((prev) => {
+          if (prev >= 100) {
+            clearInterval(timer);
+            setTimeout(() => setLoading(false), 500);
+            return 100;
+          }
+          return prev + 3;
+        });
+      }, 25);
+      return () => clearInterval(timer);
+    }, []);
+
+    const scrollToContactOrder = (itemName = null) => {
+      if (itemName) {
+        setOrderForm((prev) => ({ ...prev, item: itemName }));
+      }
+      const el = document.getElementById('contact-order');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    const handleOrderSubmit = (e) => {
+      e.preventDefault();
+      const text = `Hello JD's Kitchen, I would like to order:\nName: ${orderForm.name}\nPhone: ${orderForm.phone}\nItem: ${orderForm.item}`;
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+    };
+
+    return (
+      <div className="relative min-h-screen bg-[#0d0805] text-[#f5ecdc]">
+        
+        {/* Scroll Progress Bar */}
+        <div className="fixed top-0 left-0 h-1 bg-gradient-to-r from-[#e3a23c] via-[#f2c879] to-[#c1503c] z-50 transition-all duration-75" style={{ width: `${scrollPct}%` }} />
+
+        {/* CULINARY DUM COOKING PRELOADER */}
+        {loading && (
+          <div className="fixed inset-0 z-50 bg-[#0d0805] flex flex-col items-center justify-center p-6">
+            <div className="relative w-44 h-44 mb-6 flex items-center justify-center">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-t from-[#c1503c]/40 via-[#e3a23c]/20 to-transparent blur-xl animate-pulse" />
+              <svg width="160" height="160" viewBox="0 0 160 160" className="overflow-visible relative z-10">
+                <g>
+                  <path d="M 60 45 C 55 30, 65 20, 60 5" fill="none" stroke="#f2c879" strokeWidth="2.5" strokeLinecap="round" className="steam-line-1" />
+                  <path d="M 80 40 C 75 25, 85 15, 80 0" fill="none" stroke="#e3a23c" strokeWidth="3" strokeLinecap="round" className="steam-line-2" />
+                  <path d="M 100 45 C 95 30, 105 20, 100 5" fill="none" stroke="#f2c879" strokeWidth="2.5" strokeLinecap="round" className="steam-line-3" />
+                </g>
+                <ellipse cx="80" cy="138" rx="55" ry="12" fill="#1f1109" stroke="#c1503c" strokeWidth="1.5" strokeDasharray="4 2" />
+                <path d="M 35 75 Q 30 120, 80 125 Q 130 120, 125 75 Z" fill="url(#clayGradient)" stroke="#e3a23c" strokeWidth="2" />
+                <rect x="34" y="66" width="92" height="10" rx="4" fill="#f5ecdc" stroke="#c4832a" strokeWidth="1.5" />
+                <path d="M 40 66 Q 80 40, 120 66 Z" fill="url(#lidGradient)" stroke="#e3a23c" strokeWidth="2" />
+                <circle cx="80" cy="46" r="6" fill="#f2c879" stroke="#140c08" strokeWidth="1.5" />
+                <defs>
+                  <linearGradient id="clayGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stopColor="#4a2511" /><stop offset="100%" stopColor="#140904" /></linearGradient>
+                  <linearGradient id="lidGradient" x1="0%" y1="100%" x2="0%" y2="0%"><stop offset="0%" stopColor="#3d1d0c" /><stop offset="100%" stopColor="#6e3618" /></linearGradient>
+                </defs>
+              </svg>
+              <svg className="absolute inset-0 w-full h-full transform -rotate-90">
+                <circle cx="88" cy="88" r="80" fill="none" stroke="#1a110a" strokeWidth="4" />
+                <circle cx="88" cy="88" r="80" fill="none" stroke="#e3a23c" strokeWidth="4" strokeDasharray={502} strokeDashoffset={502 - (502 * progress) / 100} strokeLinecap="round" />
+              </svg>
+            </div>
+            <RealBrandLogo className="mb-2" />
+            <span className="font-mono text-xs text-[#c9b59c] mb-2">Unsealing Dum Counter for Kozhikode...</span>
+            <div className="w-56 h-1.5 bg-[#1f130b] rounded-full overflow-hidden mb-2 border border-[#f5ecdc]/10">
+              <div className="h-full bg-[#e3a23c]" style={{ width: `${progress}%` }} />
+            </div>
+            <span className="font-mono text-[11px] text-[#e3a23c] font-bold">{progress}%</span>
+          </div>
+        )}
+
+        {/* Header */}
+        <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-[#0d0805]/85 border-b border-[#f5ecdc]/10 px-6 py-4">
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="#top">
+              <RealBrandLogo />
+            </a>
+
+            <nav className="hidden md:flex items-center gap-8 text-sm text-[#c9b59c]">
+              <a href="#maps-choice" className="hover:text-[#e3a23c]">Top Suggested</a>
+              <a href="#about" className="hover:text-[#e3a23c]">Story</a>
+              <a href="#menu" className="hover:text-[#e3a23c]">Menu</a>
+              <a href="#instagram" className="hover:text-[#e3a23c] text-[#e3a23c] flex items-center gap-1.5">
+                <InstagramSvgIcon className="w-4 h-4 text-pink-500" /> Instagram Feed
+              </a>
+              <button onClick={() => scrollToContactOrder()} className="hover:text-[#e3a23c]">Contact &amp; Order</button>
+            </nav>
+
+            <div className="flex items-center gap-3">
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noreferrer"
+                title="Follow Official Instagram @jdskitchen.official"
+                className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-900/60 to-pink-900/60 border border-pink-500/30 text-pink-300 hover:text-white hover:border-pink-400 flex items-center gap-2 text-xs font-mono transition-all shadow-md"
+              >
+                <InstagramSvgIcon className="w-4 h-4 text-pink-400" />
+                <span className="hidden sm:inline font-bold">@jdskitchen.official</span>
+              </a>
+
+              <button onClick={() => scrollToContactOrder()} className="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#e3a23c] to-[#c4832a] text-[#140c08] font-bold text-xs uppercase shadow-lg hover:scale-105 transition-transform">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </header>
+
+        {/* Hero */}
+        <section id="top" className="relative pt-36 pb-24 md:pt-48 md:pb-36 min-h-screen flex items-center overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <ImageWithFallback src="./images/jds_beef_biryani_review.jpg" fallbackSrc="./images/jds_courtyard_1786025445110.jpg" alt="JD's Kitchen Hero" className="w-full h-full object-cover filter brightness-[0.35]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0805] via-[#0d0805]/60 to-transparent" />
+          </div>
+
+          <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 text-xs font-mono tracking-wider uppercase mb-6">
+              ● OPEN DAILY • Dum Counter Active (11:30 AM Onwards)
+            </div>
+
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#f5ecdc] leading-tight mb-6 max-w-4xl">
+              Malabar biryani, <br />
+              <span className="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#f2c879] via-[#e3a23c] to-[#c4832a]">
+                cooked the way Kozhikode remembers.
+              </span>
+            </h1>
+
+            <p className="text-lg md:text-2xl text-[#c9b59c] max-w-2xl leading-relaxed mb-10 font-light">
+              A dum-cooked biryani &amp; mandi counter under our open-air timber courtyard in Parambath, Paloramala. Served with authentic Malabar warmth.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-4 mb-14">
+              <a href="#maps-choice" className="px-8 py-4 rounded-full bg-gradient-to-r from-[#e3a23c] to-[#c4832a] text-[#140c08] font-bold text-sm uppercase shadow-xl hover:scale-105 transition-all">
+                View Top Suggested Dishes →
+              </a>
+              <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="px-8 py-4 rounded-full bg-gradient-to-r from-purple-950/80 to-pink-950/80 border border-pink-500/40 text-pink-300 font-semibold text-sm uppercase hover:border-pink-400 flex items-center gap-2.5 transition-all shadow-lg">
+                <InstagramSvgIcon className="w-4 h-4 text-pink-400" /> Follow {INSTAGRAM_HANDLE} ↗
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* TOP MAPS SUGGESTED DISHES */}
+        <section id="maps-choice" className="py-24 bg-[#120a06] border-y border-[#f5ecdc]/10 relative z-10">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#e3a23c] block mb-3">💬 Real Google Maps Recommendations</span>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#f5ecdc] mb-4">Top Suggested Dishes</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {TOP_MAPS_SUGGESTED_DISHES.map((dish) => (
+                <div key={dish.id} className="tilt-card preserve-3d rounded-3xl overflow-hidden bg-[#1a110a] border border-[#f5ecdc]/15 shadow-2xl p-6 flex flex-col justify-between">
+                  <div>
+                    <div className="relative h-56 rounded-2xl overflow-hidden mb-6">
+                      <ImageWithFallback src={dish.image} fallbackSrc={dish.fallback} alt={dish.name} className="w-full h-full object-cover" />
+                      <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#0d0805]/90 border border-[#e3a23c]/40 text-[#e3a23c] font-mono text-[10px] font-bold">
+                        {dish.highlight}
+                      </div>
+                      <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-[#e3a23c] text-[#140c08] font-serif font-bold text-sm">
+                        ₹{dish.price}
+                      </div>
+                    </div>
+                    <h3 className="font-serif font-bold text-xl text-[#f5ecdc] mb-3">{dish.name}</h3>
+                    <p className="text-xs text-[#c9b59c] italic mb-6">"{dish.quote}"</p>
+                  </div>
+                  <button onClick={() => scrollToContactOrder(dish.name)} className="w-full py-3 rounded-xl bg-[#e3a23c] text-[#140c08] font-bold text-xs uppercase">
+                    Order Suggested Dish ↓
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* INSTAGRAM POSTS SECTION WITH REAL SVG BUTTONS */}
+        <section id="instagram" className="py-24 bg-[#0d0805] border-b border-[#f5ecdc]/10 relative z-10">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-900/60 to-pink-900/60 border border-pink-500/30 text-pink-400 font-mono text-xs uppercase tracking-wider mb-3">
+                <InstagramSvgIcon className="w-4 h-4 text-pink-400" /> Official Instagram Feed • {INSTAGRAM_HANDLE}
+              </span>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#f5ecdc] mb-4">Behind the Scenes at JD's Kitchen</h2>
+              <p className="text-[#c9b59c] font-light text-base">Daily dum reveals, timber courtyard vibes &amp; customer stories from @jdskitchen.official</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {INSTAGRAM_POSTS.map((post) => (
+                <div key={post.id} className="tilt-card preserve-3d rounded-3xl overflow-hidden bg-[#1a110a] border border-[#f5ecdc]/15 shadow-2xl p-6 flex flex-col justify-between">
+                  <div>
+                    <div className="relative h-60 rounded-2xl overflow-hidden mb-5">
+                      <ImageWithFallback src={post.image} fallbackSrc="./images/jds_biryani_hero_1786025415940.jpg" alt="Instagram Post" className="w-full h-full object-cover" />
+                      <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#0d0805]/90 border border-pink-500/40 text-pink-400 font-mono text-[10px] font-bold flex items-center gap-1.5">
+                        <InstagramSvgIcon className="w-3.5 h-3.5 text-pink-400" /> {post.tag}
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <InstagramSvgIcon className="w-3.5 h-3.5 text-pink-500" />
+                      <span className="font-mono text-xs text-[#e3a23c] font-bold">{INSTAGRAM_HANDLE}</span>
+                    </div>
+                    <p className="text-xs text-[#c9b59c] font-light leading-relaxed mb-4">{post.caption}</p>
+                  </div>
+                  <div className="pt-4 border-t border-[#f5ecdc]/10 flex items-center justify-between text-xs font-mono text-[#c9b59c]">
+                    <span className="text-pink-400">❤️ {post.likes}</span>
+                    <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-[#e3a23c] font-bold hover:underline">View Post ↗</a>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-purple-700 via-pink-600 to-amber-500 text-[#f5ecdc] font-bold text-xs uppercase shadow-xl hover:scale-105 transition-transform">
+                <InstagramSvgIcon className="w-4 h-4 text-white" /> Follow @jdskitchen.official on Instagram ↗
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Story Section */}
+        <section id="about" className="py-24 max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-6">
+              <span className="font-mono text-xs uppercase text-[#e3a23c] block mb-3">Why Regulars Return</span>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#f5ecdc] mb-6">The subtle details Kozhikode genuinely talks about.</h2>
+              <p className="text-[#c9b59c] text-base leading-relaxed mb-8 font-light">
+                Located along Parambath Road in Paloramala, Kozhikode, JD's Kitchen preservation of authentic slow dum-cooking and spacious courtyard dining sets us apart.
+              </p>
+            </div>
+
+            <div className="lg:col-span-6">
+              <div className="tilt-card preserve-3d rounded-3xl overflow-hidden border border-[#f5ecdc]/15 shadow-2xl relative">
+                <ImageWithFallback src={REAL_JDS_COURTYARD_PHOTO} fallbackSrc="./images/jds_courtyard_1786025445110.jpg" alt="Courtyard Real Photo" className="w-full h-[450px] object-cover" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* COMBINED CONTACT, ORDER & TACTICAL MAPS SECTION */}
+        <section id="contact-order" className="py-24 bg-[#0d0805] border-t border-[#f5ecdc]/10 relative z-10">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#e3a23c] block mb-3">📍 Contact &amp; Direct Order Counter</span>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#f5ecdc] mb-4">Place Your Order or Find Us</h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+              <div className="lg:col-span-5 space-y-6">
+                <div className="p-8 rounded-3xl bg-[#1a110a] border border-[#e3a23c]/30 shadow-2xl space-y-6">
+                  <h3 className="font-serif text-2xl font-bold text-[#f5ecdc]">Direct WhatsApp Order</h3>
+                  <form onSubmit={handleOrderSubmit} className="space-y-4">
+                    <input type="text" required placeholder="Your Name" value={orderForm.name} onChange={(e) => setOrderForm({ ...orderForm, name: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]" />
+                    <input type="tel" required placeholder="Phone Number" value={orderForm.phone} onChange={(e) => setOrderForm({ ...orderForm, phone: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]" />
+                    <select value={orderForm.item} onChange={(e) => setOrderForm({ ...orderForm, item: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]">
+                      {MENU_ITEMS.map((item) => (
+                        <option key={item.id} value={item.name}>{item.name} - ₹{item.price}</option>
+                      ))}
+                    </select>
+                    <button type="submit" className="w-full py-4 rounded-xl bg-[#e3a23c] text-[#140c08] font-bold text-xs uppercase">
+                      Send Order to WhatsApp ➔
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <div className="lg:col-span-7">
+                <div className="tilt-card preserve-3d h-[520px] rounded-3xl overflow-hidden border border-[#f5ecdc]/20 shadow-2xl bg-[#120a06] relative">
+                  <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.8!2d75.7591583!3d11.3539638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65f84d39af2d7%3A0x474484ee5ed2bbe9!2sJD&#39;s%20Kitchen!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="py-12 bg-[#090503] text-center border-t border-[#f5ecdc]/10">
+          <RealBrandLogo className="justify-center mb-4" />
+          <p className="font-mono text-xs text-[#e3a23c] uppercase tracking-widest mb-6">Parambath • Kozhikode</p>
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1a110a] border border-pink-500/30 text-pink-400 font-mono text-xs hover:bg-pink-950/60 hover:text-white transition-all">
+              <InstagramSvgIcon className="w-4 h-4 text-pink-400" />
+              <span>{INSTAGRAM_HANDLE}</span>
+            </a>
+          </div>
+          <p className="text-xs text-[#c9b59c]/60">© {new Date().getFullYear()} JD's Kitchen. All rights reserved.</p>
+        </footer>
+
+      </div>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

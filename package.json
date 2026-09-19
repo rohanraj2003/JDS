@@ -1,0 +1,10 @@
+{
+  "name": "jds-kitchen-kozhikode",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JD's Kitchen — Authentic Malabar Dum Biryani & Mandi, Kozhikode",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static build complete'"
+  }
+}
