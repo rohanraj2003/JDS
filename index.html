@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JD's Kitchen — Malabar Biryani &amp; Mandi, Kozhikode</title>
+<meta name="description" content="Dum-cooked Malabar Biryani &amp; Mandi under an open-air timber courtyard in Parambath, Paloramala, Kozhikode. Ample parking &amp; daily dum counter from 11:30 AM.">
+<link rel="canonical" href="https://jdskitchen.vercel.app/">
 <!-- Open Graph / WhatsApp Preview -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JD's Kitchen Kozhikode">
@@ -131,9 +133,16 @@
 <body class="bg-[#0d0805] text-[#f5ecdc] antialiased">
 
 <!-- 3D Ember Particle Canvas -->
-<canvas id="emberCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+<canvas id="emberCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40" aria-hidden="true" role="presentation"></canvas>
 
 <div id="root"></div>
+<noscript>
+  <div style="padding:2rem;text-align:center;color:#f5ecdc;font-family:sans-serif;">
+    <h1>JD's Kitchen — Kozhikode</h1>
+    <p>Please enable JavaScript to view this website.</p>
+    <p><a href="https://maps.app.goo.gl/TTVe3f8395hx39yf9" style="color:#e3a23c;">📍 Find us on Google Maps</a></p>
+  </div>
+</noscript>
 
 <!-- React & Babel CDN -->
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
@@ -261,7 +270,7 @@
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
           </div>
           <span className="font-mono text-[9px] text-[#e3a23c] tracking-[0.2em] uppercase font-bold block mt-0.5">
-            Malabar Biryani &amp; Mandi
+            Malabar Biryani & Mandi
           </span>
         </div>
       </div>
@@ -290,8 +299,6 @@
     const [progress, setProgress] = useState(0);
     const [scrollPct, setScrollPct] = useState(0);
     const [activeCategory, setActiveCategory] = useState("All");
-    const [selectedFlavorDish, setSelectedFlavorDish] = useState(null);
-    const [selectedRoute, setSelectedRoute] = useState(ROUTE_PILLS[0]);
     const [orderForm, setOrderForm] = useState({ name: "", phone: "", item: "Kozhikode Malabar Beef Dum Biryani" });
 
     useEffect(() => {
@@ -383,12 +390,13 @@
 
             <nav className="hidden md:flex items-center gap-8 text-sm text-[#c9b59c]">
               <a href="#maps-choice" className="hover:text-[#e3a23c]">Top Suggested</a>
-              <a href="#about" className="hover:text-[#e3a23c]">Story</a>
               <a href="#menu" className="hover:text-[#e3a23c]">Menu</a>
+              <a href="#reviews" className="hover:text-[#e3a23c]">Reviews</a>
+              <a href="#about" className="hover:text-[#e3a23c]">Story</a>
               <a href="#instagram" className="hover:text-[#e3a23c] text-[#e3a23c] flex items-center gap-1.5">
                 <InstagramSvgIcon className="w-4 h-4 text-pink-500" /> Instagram Feed
               </a>
-              <button onClick={() => scrollToContactOrder()} className="hover:text-[#e3a23c]">Contact &amp; Order</button>
+              <button onClick={() => scrollToContactOrder()} className="hover:text-[#e3a23c]">Contact & Order</button>
             </nav>
 
             <div className="flex items-center gap-3">
@@ -430,7 +438,7 @@
             </h1>
 
             <p className="text-lg md:text-2xl text-[#c9b59c] max-w-2xl leading-relaxed mb-10 font-light">
-              A dum-cooked biryani &amp; mandi counter under our open-air timber courtyard in Parambath, Paloramala. Served with authentic Malabar warmth.
+              A dum-cooked biryani & mandi counter under our open-air timber courtyard in Parambath, Paloramala. Served with authentic Malabar warmth.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-14">
@@ -484,7 +492,7 @@
                 <InstagramSvgIcon className="w-4 h-4 text-pink-400" /> Official Instagram Feed • {INSTAGRAM_HANDLE}
               </span>
               <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#f5ecdc] mb-4">Behind the Scenes at JD's Kitchen</h2>
-              <p className="text-[#c9b59c] font-light text-base">Daily dum reveals, timber courtyard vibes &amp; customer stories from @jdskitchen.official</p>
+              <p className="text-[#c9b59c] font-light text-base">Daily dum reveals, timber courtyard vibes & customer stories from @jdskitchen.official</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -514,6 +522,132 @@
             <div className="text-center mt-12">
               <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-purple-700 via-pink-600 to-amber-500 text-[#f5ecdc] font-bold text-xs uppercase shadow-xl hover:scale-105 transition-transform">
                 <InstagramSvgIcon className="w-4 h-4 text-white" /> Follow @jdskitchen.official on Instagram ↗
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* FULL MENU SECTION */}
+        <section id="menu" className="py-24 bg-[#120a06] border-y border-[#f5ecdc]/10 relative z-10">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#e3a23c] block mb-3">🍽️ Our Signature Selection</span>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#f5ecdc] mb-4">Full Menu</h2>
+              <p className="text-[#c9b59c] font-light text-base">Authentic Malabar classics, each dish crafted with heritage recipes and the finest local ingredients.</p>
+            </div>
+
+            {/* Category Filter */}
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
+              {["All", ...new Set(MENU_ITEMS.map((item) => item.category))].map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`px-5 py-2 rounded-full text-xs font-mono uppercase tracking-wider transition-all ${
+                    activeCategory === cat
+                      ? "bg-[#e3a23c] text-[#140c08] font-bold shadow-lg"
+                      : "bg-[#1a110a] text-[#c9b59c] border border-[#f5ecdc]/10 hover:border-[#e3a23c]/40"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {MENU_ITEMS.filter((item) => activeCategory === "All" || item.category === activeCategory).map((item) => (
+                <div key={item.id} className="tilt-card preserve-3d rounded-3xl overflow-hidden bg-[#1a110a] border border-[#f5ecdc]/15 shadow-2xl flex flex-col md:flex-row">
+                  <div className="relative w-full md:w-48 h-48 md:h-auto flex-shrink-0">
+                    <ImageWithFallback src={item.image} fallbackSrc={item.fallback} alt={item.name} className="w-full h-full object-cover" />
+                    <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#0d0805]/90 border border-[#e3a23c]/40 text-[#e3a23c] font-mono text-[10px] font-bold">
+                      {item.tag}
+                    </div>
+                  </div>
+                  <div className="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                      <div className="flex items-start justify-between mb-2">
+                        <h3 className="font-serif font-bold text-lg text-[#f5ecdc]">{item.name}</h3>
+                        <span className="px-3 py-1 rounded-full bg-[#e3a23c] text-[#140c08] font-serif font-bold text-sm flex-shrink-0 ml-3">₹{item.price}</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-[#c9b59c] uppercase tracking-wider block mb-3">{item.category}</span>
+                      <p className="text-sm text-[#c9b59c] font-light leading-relaxed mb-4">{item.description}</p>
+
+                      {/* Flavor Profile */}
+                      <div className="grid grid-cols-3 gap-2 mb-4">
+                        {Object.entries(item.profile).filter(([key]) => !["dumTime", "riceType"].includes(key)).map(([key, value]) => (
+                          <div key={key} className="text-center">
+                            <div className="text-[9px] font-mono text-[#c9b59c] uppercase mb-1">{key}</div>
+                            <div className="flex justify-center gap-0.5">
+                              {[1, 2, 3, 4, 5].map((i) => (
+                                <span key={i} className={`w-2 h-2 rounded-full ${i <= value ? "bg-[#e3a23c]" : "bg-[#1f130b]"}`} />
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        <span className="px-2.5 py-1 rounded-full bg-[#0d0805] border border-[#f5ecdc]/10 text-[9px] font-mono text-[#c9b59c]">⏱ {item.profile.dumTime}</span>
+                        <span className="px-2.5 py-1 rounded-full bg-[#0d0805] border border-[#f5ecdc]/10 text-[9px] font-mono text-[#c9b59c]">🍚 {item.profile.riceType}</span>
+                      </div>
+                    </div>
+                    <button onClick={() => scrollToContactOrder(item.name)} className="w-full py-3 rounded-xl bg-[#e3a23c] text-[#140c08] font-bold text-xs uppercase hover:scale-[1.02] transition-transform">
+                      Order {item.name} ↓
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* REAL GOOGLE REVIEWS SECTION */}
+        <section id="reviews" className="py-24 bg-[#0d0805] border-b border-[#f5ecdc]/10 relative z-10">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#e3a23c] block mb-3">⭐ Verified Google Reviews</span>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#f5ecdc] mb-4">What Kozhikode Says</h2>
+              <p className="text-[#c9b59c] font-light text-base">Real feedback from real diners on Google Maps.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {REAL_GOOGLE_REVIEWS.map((review) => (
+                <div key={review.id} className="tilt-card preserve-3d rounded-3xl overflow-hidden bg-[#1a110a] border border-[#f5ecdc]/15 shadow-2xl p-6 flex flex-col justify-between">
+                  <div>
+                    <div className="relative h-44 rounded-2xl overflow-hidden mb-5">
+                      <ImageWithFallback src={review.photo} fallbackSrc="./images/jds_biryani_hero_1786025415940.jpg" alt={review.photoTag} className="w-full h-full object-cover" />
+                      <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#0d0805]/90 border border-[#e3a23c]/40 text-[#e3a23c] font-mono text-[10px] font-bold">
+                        📸 {review.photoTag}
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#c4832a] to-[#f2c879] flex items-center justify-center text-[#0d0805] font-bold text-sm">
+                        {review.name.charAt(0)}
+                      </div>
+                      <div>
+                        <h4 className="font-serif font-bold text-sm text-[#f5ecdc]">{review.name}</h4>
+                        <span className="text-[10px] font-mono text-[#c9b59c]">{review.reviewerBadge}</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1 mb-3">
+                      {[...Array(review.stars)].map((_, i) => (
+                        <span key={i} className="text-[#e3a23c] text-sm">★</span>
+                      ))}
+                      {[...Array(5 - review.stars)].map((_, i) => (
+                        <span key={i} className="text-[#1f130b] text-sm">★</span>
+                      ))}
+                      <span className="text-[10px] font-mono text-[#c9b59c] ml-2">{review.when}</span>
+                    </div>
+                    <p className="text-xs text-[#c9b59c] font-light leading-relaxed">{review.comment}</p>
+                  </div>
+                  <div className="pt-4 mt-4 border-t border-[#f5ecdc]/10">
+                    <a href={GOOGLE_MAPS_URL} target="_blank" rel="noreferrer" className="text-[10px] font-mono text-[#e3a23c] font-bold hover:underline">View on Google Maps ↗</a>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <a href={GOOGLE_MAPS_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[#1a110a] border border-[#e3a23c]/40 text-[#e3a23c] font-bold text-xs uppercase shadow-xl hover:scale-105 hover:border-[#e3a23c] transition-all">
+                📍 View All Reviews on Google Maps ↗
               </a>
             </div>
           </div>
@@ -551,9 +685,9 @@
                 <div className="p-8 rounded-3xl bg-[#1a110a] border border-[#e3a23c]/30 shadow-2xl space-y-6">
                   <h3 className="font-serif text-2xl font-bold text-[#f5ecdc]">Direct WhatsApp Order</h3>
                   <form onSubmit={handleOrderSubmit} className="space-y-4">
-                    <input type="text" required placeholder="Your Name" value={orderForm.name} onChange={(e) => setOrderForm({ ...orderForm, name: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]" />
-                    <input type="tel" required placeholder="Phone Number" value={orderForm.phone} onChange={(e) => setOrderForm({ ...orderForm, phone: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]" />
-                    <select value={orderForm.item} onChange={(e) => setOrderForm({ ...orderForm, item: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]">
+                    <input type="text" required placeholder="Your Name" aria-label="Your Name" value={orderForm.name} onChange={(e) => setOrderForm({ ...orderForm, name: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]" />
+                    <input type="tel" required placeholder="Phone Number" aria-label="Phone Number" value={orderForm.phone} onChange={(e) => setOrderForm({ ...orderForm, phone: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]" />
+                    <select value={orderForm.item} aria-label="Select Menu Item" onChange={(e) => setOrderForm({ ...orderForm, item: e.target.value })} className="w-full px-4 py-3 rounded-xl bg-[#0d0805] border border-[#f5ecdc]/20 text-sm text-[#f5ecdc]">
                       {MENU_ITEMS.map((item) => (
                         <option key={item.id} value={item.name}>{item.name} - ₹{item.price}</option>
                       ))}
@@ -567,7 +701,7 @@
 
               <div className="lg:col-span-7">
                 <div className="tilt-card preserve-3d h-[520px] rounded-3xl overflow-hidden border border-[#f5ecdc]/20 shadow-2xl bg-[#120a06] relative">
-                  <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.8!2d75.7591583!3d11.3539638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65f84d39af2d7%3A0x474484ee5ed2bbe9!2sJD&#39;s%20Kitchen!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }} />
+                  <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.8!2d75.7591583!3d11.3539638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65f84d39af2d7%3A0x474484ee5ed2bbe9!2sJD&#39;s%20Kitchen!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" loading="lazy" allowFullScreen style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }} />
                 </div>
               </div>
             </div>

@@ -1,0 +1,7 @@
+.vercel
+node_modules
+.DS_Store
+*.log
+*.zip
+scratch/
+jds-kitchen-enhanced.html
